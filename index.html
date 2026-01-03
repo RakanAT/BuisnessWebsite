@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handyman Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Reliable Handyman Services</h1>
+        <p>Painting | Flooring | Plumbing | Foundation Work</p>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Painting</h3>
+                <p>Interior & exterior painting done right.</p>
+            </div>
+            <div class="card">
+                <h3>Flooring</h3>
+                <p>Hardwood, laminate, tile, and more.</p>
+            </div>
+            <div class="card">
+                <h3>Plumbing</h3>
+                <p>Certified plumbing services you can trust.</p>
+            </div>
+            <div class="card">
+                <h3>Foundation Work</h3>
+                <p>Basement and foundation repair & support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact">
+        <h2>Get a Free Quote</h2>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            
+            <select name="service" required>
+                <option value="">Select Service</option>
+                <option value="Painting">Painting</option>
+                <option value="Flooring">Flooring</option>
+                <option value="Plumbing">Plumbing</option>
+                <option value="Foundation Work">Foundation Work</option>
+            </select>
+
+            <textarea name="message" placeholder="Brief description..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="formResponse"></p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
