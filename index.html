@@ -1,65 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Handyman Services</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handyman Pro Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <header class="hero">
-        <h1>Reliable Handyman Services</h1>
-        <p>Painting | Flooring | Plumbing | Foundation Work</p>
-    </header>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Our Services</h2>
-        <div class="service-cards">
-            <div class="card">
-                <h3>Painting</h3>
-                <p>Interior & exterior painting done right.</p>
-            </div>
-            <div class="card">
-                <h3>Flooring</h3>
-                <p>Hardwood, laminate, tile, and more.</p>
-            </div>
-            <div class="card">
-                <h3>Plumbing</h3>
-                <p>Certified plumbing services you can trust.</p>
-            </div>
-            <div class="card">
-                <h3>Foundation Work</h3>
-                <p>Basement and foundation repair & support.</p>
-            </div>
-        </div>
-    </section>
+  <!-- Navigation / Header -->
+  <header class="header">
+    <div class="container">
+      <h1>Handyman Pro</h1>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#contact">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Contact Form -->
-    <section id="contact" class="contact">
-        <h2>Get a Free Quote</h2>
-        <form id="contactForm">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="tel" name="phone" placeholder="Phone Number" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            
-            <select name="service" required>
-                <option value="">Select Service</option>
-                <option value="Painting">Painting</option>
-                <option value="Flooring">Flooring</option>
-                <option value="Plumbing">Plumbing</option>
-                <option value="Foundation Work">Foundation Work</option>
-            </select>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Your Trusted Handyman Experts</h2>
+      <p>Painting | Flooring | Plumbing | Foundation Work</p>
+      <a href="#contact" class="btn">Request a Quote</a>
+    </div>
+  </section>
 
-            <textarea name="message" placeholder="Brief description..." required></textarea>
-            <button type="submit">Submit</button>
-        </form>
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <img src="https://img.icons8.com/color/96/000000/paint-palette.png" alt="Painting Icon">
+        <h3>Painting</h3>
+        <p>Interior and exterior painting with professional results.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/color/96/000000/floor-plan.png" alt="Flooring Icon">
+        <h3>Flooring</h3>
+        <p>Hardwood, laminate, and tile flooring installation.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/color/96/000000/plumber.png" alt="Plumbing Icon">
+        <h3>Plumbing</h3>
+        <p>Certified plumbing services for all your needs.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/color/96/000000/foundation.png" alt="Foundation Icon">
+        <h3>Foundation Work</h3>
+        <p>Basement and foundation repair, leveling, and support.</p>
+      </div>
+    </div>
+  </section>
 
-        <p id="formResponse"></p>
-    </section>
+  <!-- Contact Form -->
+  <section id="contact" class="contact">
+    <h2>Get a Free Quote</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <select name="service" required>
+        <option value="">Select Service</option>
+        <option value="Painting">Painting</option>
+        <option value="Flooring">Flooring</option>
+        <option value="Plumbing">Plumbing</option>
+        <option value="Foundation Work">Foundation Work</option>
+      </select>
+      <textarea name="message" placeholder="Brief description..." required></textarea>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+    <p id="formResponse"></p>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script src="scripts.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Handyman Pro. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
