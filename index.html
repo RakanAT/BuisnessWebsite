@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Handyman Pro Services</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -15,24 +15,27 @@
       <h1>Handyman Pro</h1>
       <nav>
         <a href="#services">Services</a>
-        <a href="#contact">Get a Quote</a>
+        <a href="#contact">Book Appointment</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-content">
-      <h2>Your Trusted Handyman Experts</h2>
-      <p>Painting | Flooring | Plumbing | Foundation Work</p>
-      <a href="#contact" class="btn">Request a Quote</a>
+    <div class="container">
+      <div class="hero-content">
+        <h2>Your Trusted Handyman Experts</h2>
+        <p>Professional Painting | Flooring | Plumbing | Foundation Work</p>
+        <a href="#contact" class="btn">Book Your Appointment</a>
+      </div>
     </div>
   </section>
 
   <!-- Services Section -->
   <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-cards">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-cards">
       <div class="card">
         <img src="https://img.icons8.com/color/96/000000/paint-palette.png" alt="Painting Icon">
         <h3>Painting</h3>
@@ -53,27 +56,33 @@
         <h3>Foundation Work</h3>
         <p>Basement and foundation repair, leveling, and support.</p>
       </div>
+      </div>
     </div>
   </section>
 
   <!-- Contact Form -->
   <section id="contact" class="contact">
-    <h2>Get a Free Quote</h2>
-    <form id="contactForm">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="tel" name="phone" placeholder="Phone Number" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <select name="service" required>
-        <option value="">Select Service</option>
-        <option value="Painting">Painting</option>
-        <option value="Flooring">Flooring</option>
-        <option value="Plumbing">Plumbing</option>
-        <option value="Foundation Work">Foundation Work</option>
-      </select>
-      <textarea name="message" placeholder="Brief description..." required></textarea>
-      <button type="submit" class="btn">Submit</button>
-    </form>
-    <p id="formResponse"></p>
+    <div class="container">
+      <h2>Book Your Appointment</h2>
+      <p style="text-align: center; margin-bottom: 3rem; opacity: 0.9; font-size: 1.1rem;">
+        Fill out the form below and we'll get back to you within 24 hours
+      </p>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Full Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <select name="service" required>
+          <option value="">Select a Service</option>
+          <option value="Painting">Painting</option>
+          <option value="Flooring">Flooring</option>
+          <option value="Plumbing">Plumbing</option>
+          <option value="Foundation Work">Foundation Work</option>
+        </select>
+        <textarea name="message" placeholder="Tell us about your project or any specific requirements..." required></textarea>
+        <button type="submit" class="btn">Book Appointment</button>
+      </form>
+      <p id="formResponse"></p>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -82,6 +91,6 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
